@@ -68,12 +68,12 @@ const Banner = () => {
 
             <div className="container">
                 <div className="row">
-                    <div className="col-md-8">
-                        <h5 className="p-4">PRONAYON, a concern of Capco Group, is one of the most dynamic Architectural, Engineering, and Planning Consultants in Bangladesh with market leading position in Chittagong.</h5>
-                        <img src={maskgroup}  alt=""/>
+                    <div className="col-md-8 p-4">
+                        <h5 className="p-3 w-50">PRONAYON, a concern of Capco Group, is one of the most dynamic Architectural, Engineering, and Planning Consultants in Bangladesh with market leading position in Chittagong.</h5>
+                        <img className="p-3" src={maskgroup}  alt=""/>
 
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 p-4">
                         <h1>31 </h1>
                         <h6>Years experience</h6>
                         <h1>2000 </h1>

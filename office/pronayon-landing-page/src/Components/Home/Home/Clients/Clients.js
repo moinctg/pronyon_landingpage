@@ -12,7 +12,7 @@ import img10 from '../../../../Images/Group 95.png';
 
 const Clients = () => {
     return (
-        <div className="container">
+        <div className="container pt-5">
             <div className='row'>
                 <div className='col-lg-6'>
                     <h1>Clients</h1>

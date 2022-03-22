@@ -2,3 +2,23 @@
 .team-back{
     background-color: #595959 ;
 }
+.style{
+	border-top: 1px solid #8c8b8b;
+}
+.img {
+    /* filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); */
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    /* filter: url(desaturate.svg#greyscale); */
+    filter:#595959;
+    -webkit-filter: grayscale(1);
+  }
+
+.team-title{
+    display: flex;
+    flex-direction:row;
+}

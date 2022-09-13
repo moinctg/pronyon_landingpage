@@ -1,0 +1,17 @@
+.client-h1 {
+    font-size: 70px;
+    Line-height: 29px;
+    color: #595959;
+    font-family: 'Open Sans';
+    margin-bottom: 25px;
+}
+
+.client-txt {
+    width: 392px;
+    height: 232px;
+    padding-right: 14px;
+    font-family: 'Open Sans';
+    Font-size: 21px;
+    Line-height: 29px;
+    color: #595959;
+}

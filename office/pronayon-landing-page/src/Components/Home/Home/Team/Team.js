@@ -28,7 +28,7 @@ const Team = () => {
                         <div className="style mt-4">
                             <div className="team-title">
                                <p className="p-3 "> <span className="fs-4 text-white ">Marcus Owens</span><br/> Architects</p>
-                            <p className="p-3 text-white ">  Facebook <br/> Linkdin  </p>
+                            <p className="p-3 text-white team-social ">  Facebook <br/> Linkdin  </p>
                               
                             </div>
                         </div>
@@ -39,7 +39,7 @@ const Team = () => {
                     <div className="style mt-4">
                             <div className="team-title">
                                <p className="p-3 "> <span className="fs-4 text-white ">Marcus Owens</span><br/> Architects</p>
-                            <p className="p-3 text-white ">  Facebook <br/> Linkdin  </p>
+                            <p className="p-3 text-white  team-social">  Facebook <br/> Linkdin  </p>
                               
                             </div>
                         </div>
@@ -50,7 +50,7 @@ const Team = () => {
                     <div className="style mt-4">
                             <div className="team-title">
                                <p className="p-3  "><span className="fs-4 text-white">Marcus Owens</span><br/> Architects</p>
-                            <p className="p-3 text-white ">  Facebook <br/> Linkdin  </p>
+                            <p className="p-3 text-white team-social ">  Facebook <br/> Linkdin  </p>
                               
                             </div>
                         </div>
@@ -61,7 +61,7 @@ const Team = () => {
                     <div className="style mt-4">
                             <div className="team-title">
                                <p className="p-3 "> <span className="fs-4 text-white">Marcus Owens</span> <br/> Architects</p>
-                            <p className="p-3 text-white style">  Facebook <br/> Linkdin  </p>
+                            <p className="p-3 text-white style team-social">  Facebook <br/> Linkdin  </p>
                               
                             </div>
                         </div>

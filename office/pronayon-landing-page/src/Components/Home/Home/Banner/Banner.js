@@ -73,17 +73,18 @@ const Banner = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-8 p-4">
-                        <h5 className="p-3 w-50">PRONAYON, a concern of Capco Group, is one of the most dynamic Architectural, Engineering, and Planning Consultants in Bangladesh with market leading position in Chittagong.</h5>
+                      <h1 className='banner-h1'>PRONAYON</h1>
+                        <h5 className="banner-txt w-50">PRONAYON, a concern of Capco Group, is one of the most dynamic Architectural, Engineering, and Planning Consultants in Bangladesh with market leading position in Chittagong.</h5>
                         <img className="p-3" src={maskgroup1}  alt=""/>
 
                     </div>
-                    <div className="col-md-4 p-4">
-                        <h1>31 </h1>
-                        <h6>Years experience</h6>
-                        <h1>2000 </h1>
-                        <h6>References of projects</h6>
-                        <h5>A committed and competent group of multi-deciplined professionals.</h5>
-                        <p>It is a team of committed and versatile professionals, dedicated to idealize new thinking and bewitching designs and architecture. We, the PRONAYON family, is promised to evaluate your imaginary concept and to incarnate your dream into the ultimate completion</p>
+                    <div className="col-md-4 p-4 banner-left">
+                        <h1 className='banner-left-head'>31 </h1>
+                        <h6 className='banner-h6'>Years experience</h6>
+                        <h1 className='banner-left-head'>2000 </h1>
+                        <h6 className='banner-h6'>References of projects</h6>
+                        <h5 className='banner-h5'>A committed and competent group of multi-deciplined professionals.</h5>
+                        <p className='banner-p'>It is a team of committed and versatile professionals, dedicated to idealize new thinking and bewitching designs and architecture. We, the PRONAYON family, is promised to evaluate your imaginary concept and to incarnate your dream into the ultimate completion</p>
 
                     </div>
                 </div>

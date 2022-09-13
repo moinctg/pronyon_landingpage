@@ -21,4 +21,8 @@
 .team-title{
     display: flex;
     flex-direction:row;
+   
+}
+.team-social{
+    text-decoration: underline;
 }

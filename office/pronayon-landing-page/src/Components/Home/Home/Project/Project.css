@@ -7,7 +7,9 @@
 .image-gallary:hover{
     border: 1px solid #777;
 }
-
+.portfolio {
+    margin-left: 0px;
+}
 .image-gallary img{
     width: 100%;
     height: auto;

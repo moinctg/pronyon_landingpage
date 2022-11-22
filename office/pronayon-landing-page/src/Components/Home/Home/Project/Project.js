@@ -36,44 +36,53 @@ import React, { useState, useEffect } from "react";
 
 const Project = () => {
   const [activeKey, setActiveKey] = useState("*");
-  const [imgList, setImgList] = useState([
+  const imgList= [
     {
       img: inteiar1,
       class: "filter-interior",
+      title: "Test title"
     },
     {
       img: arc1,
       class: "filter-arc",
+      title: "Test title"
     },
     {
       img: inteiar2,
       class: "filter-interior",
+      title: "Test title"
     },
     {
       img: consoltan1,
       class: "filter-cons",
+      title: "Test title"
     },
     {
       img: arc3,
       class: "filter-arc",
+      title: "Test title"
     },
     {
       img: inteiar4,
       class: "filter-interior",
+      title: "Test title"
     },
     {
       img: consoltan2,
       class: "filter-cons",
+      title: "Test title"
     },
     {
       img: consoltan3,
       class: "filter-cons",
+      title: "Test title"
     },
     {
       img: arc4,
       class: "filter-arc",
+      title: "Test title"
     },
-  ]);
+  ];
   const [portfolioIsotope, setPortfolioIsotope] = useState(null);
 
   // let portfolioIsotope = null;
@@ -89,6 +98,10 @@ const Project = () => {
         });
         setPortfolioIsotope(portfolioIsotopeTemp)
       }
+
+      window.GLightbox({
+        selector: '.portfolio-lightbox'
+      });
     });
   }, []);
 
@@ -136,20 +149,6 @@ const Project = () => {
             <h1>Project</h1>
           </div>
 
-          {/* <div class="row" data-aos="fade-up">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">
-                  All Project
-                </li>
-                <li data-filter=".filter-app">Interiar</li>
-                <li data-filter=".filter-card">Consaltant</li>
-                <li data-filter=".filter-web">Architecture</li>
-                <li data-filter=".filter-card">Engineering</li>
-              </ul>
-            </div>
-          </div> */}
-
           <Nav
             className="justify-content-center p-4"
             variant="pills"
@@ -179,7 +178,7 @@ const Project = () => {
                 Architecture
               </Nav.Link>
             </Nav.Item>
-            <NavDropdown title="Dropdown" id="nav-dropdown">
+            <NavDropdown title="Others" id="nav-dropdown">
               <NavDropdown.Item eventKey=".filter-eng">
                 Engineering
               </NavDropdown.Item>
@@ -209,7 +208,7 @@ const Project = () => {
                         href={img.img}
                         data-gallery="portfolioGallery"
                         className="portfolio-lightbox"
-                        title="App 1"
+                        title={img.title}
                       >
                         <i class="bx bx-plus"></i>
                       </a>

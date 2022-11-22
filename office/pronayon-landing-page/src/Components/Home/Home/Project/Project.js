@@ -32,7 +32,7 @@ import consoltan4 from "../../../../Images/project/Consalting/8.jpg";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Project = () => {
   const [activeKey, setActiveKey] = useState("All");
@@ -47,6 +47,20 @@ const Project = () => {
     consoltan3,
     arc4,
   ]);
+
+  useEffect(() => {
+    const script = document.createElement('script');
+  
+    script.src = "assets/js/homePageInit.js";
+    script.async = true;
+  
+    document.body.appendChild(script);
+  
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, []);
+
   const handleSelect = (eventKey) => {
     // alert(`selected ${eventKey}`);
     setActiveKey(eventKey);

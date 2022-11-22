@@ -35,7 +35,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import React, { useState, useEffect } from "react";
 
 const Project = () => {
-  const [activeKey, setActiveKey] = useState("All");
+  const [activeKey, setActiveKey] = useState("*");
   const [imgList, setImgList] = useState([
     {
       img: inteiar1,
@@ -74,23 +74,60 @@ const Project = () => {
       class: "filter-arc",
     },
   ]);
+  const [portfolioIsotope, setPortfolioIsotope] = useState(null);
+
+  // let portfolioIsotope = null;
 
   useEffect(() => {
-    const script = document.createElement("script");
+    window.addEventListener("load", () => {
+      console.log("homePageInit on load");
 
-    script.src = "assets/js/homePageInit.js";
-    script.async = true;
-
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
+      let portfolioContainer = select(".portfolio-container");
+      if (portfolioContainer) {
+        const portfolioIsotopeTemp = new window.Isotope(portfolioContainer, {
+          itemSelector: ".portfolio-item",
+        });
+        setPortfolioIsotope(portfolioIsotopeTemp)
+      }
+    });
   }, []);
+
+  /**
+   * Easy selector helper function
+   */
+  const select = (el, all = false) => {
+    el = el.trim();
+    if (all) {
+      return [...document.querySelectorAll(el)];
+    } else {
+      return document.querySelector(el);
+    }
+  };
+
+  /**
+   * Easy event listener function
+   */
+  const on = (type, el, listener, all = false) => {
+    let selectEl = select(el, all);
+    if (selectEl) {
+      if (all) {
+        selectEl.forEach((e) => e.addEventListener(type, listener));
+      } else {
+        selectEl.addEventListener(type, listener);
+      }
+    }
+  };
 
   const handleSelect = (eventKey) => {
     setActiveKey(eventKey);
+    portfolioIsotope.arrange({
+      filter: eventKey,
+    });
+    portfolioIsotope.on("arrangeComplete", function () {
+      window.AOS.refresh();
+    });
   };
+
   return (
     <div>
       <section id="portfolio" class="portfolio section-bg">
@@ -120,23 +157,35 @@ const Project = () => {
             onSelect={handleSelect}
           >
             <Nav.Item>
-              <Nav.Link data-filter="*" className="portfolio-selector" eventKey="All" href="#/home">
+              <Nav.Link
+                eventKey="*"
+                href="#/home"
+              >
                 All
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link data-filter=".filter-interior" className="portfolio-selector" eventKey="Interior" href="#/home">
+              <Nav.Link
+                eventKey=".filter-interior"
+                href="#/home"
+              >
                 Interior
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link data-filter=".filter-arc" className="portfolio-selector" eventKey="Architecture">Architecture</Nav.Link>
+              <Nav.Link
+                eventKey=".filter-arc"
+              >
+                Architecture
+              </Nav.Link>
             </Nav.Item>
             <NavDropdown title="Dropdown" id="nav-dropdown">
-              <NavDropdown.Item eventKey="Engineering">
+              <NavDropdown.Item eventKey=".filter-eng">
                 Engineering
               </NavDropdown.Item>
-              <NavDropdown.Item data-filter=".filter-cons" className="portfolio-selector" eventKey="Consaltant">
+              <NavDropdown.Item
+                eventKey=".filter-cons"
+              >
                 Consaltant
               </NavDropdown.Item>
             </NavDropdown>
@@ -149,7 +198,10 @@ const Project = () => {
           >
             {imgList.map((img, index) => {
               return (
-                <div key={index} className={`col-lg-4 col-md-6 portfolio-item ${img.class}`}>
+                <div
+                  key={index}
+                  className={`col-lg-4 col-md-6 portfolio-item ${img.class}`}
+                >
                   <div class="portfolio-wrap">
                     <img src={img.img} class="img-fluid" alt="" />
                     <div class="portfolio-links">

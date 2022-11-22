@@ -1,5 +1,11 @@
-
-.nav{
-    margin-left: 450px;
-    
+.custom-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.custom-nav .navbar-collapse{
+    flex-grow: 0;
+}
+.custom-nav input{
+    border-radius: 50px;
+    width: 150px;
 }

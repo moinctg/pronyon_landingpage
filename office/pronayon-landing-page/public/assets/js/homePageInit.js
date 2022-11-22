@@ -32,23 +32,19 @@ const on = (type, el, listener, all = false) => {
 
 window.addEventListener("load", () => {
   console.log("homePageInit on load");
+  
   let portfolioContainer = select(".portfolio-container");
   if (portfolioContainer) {
     let portfolioIsotope = new Isotope(portfolioContainer, {
       itemSelector: ".portfolio-item",
     });
 
-    let portfolioFilters = select("#portfolio-flters li", true);
-
     on(
       "click",
-      "#portfolio-flters li",
+      ".portfolio-selector",
       function (e) {
         e.preventDefault();
-        portfolioFilters.forEach(function (el) {
-          el.classList.remove("filter-active");
-        });
-        this.classList.add("filter-active");
+        alert(this.getAttribute("data-filter"));
 
         portfolioIsotope.arrange({
           filter: this.getAttribute("data-filter"),

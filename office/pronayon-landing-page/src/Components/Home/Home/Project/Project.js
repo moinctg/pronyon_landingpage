@@ -37,63 +37,59 @@ import React, { useState, useEffect } from "react";
 const Project = () => {
   const [activeKey, setActiveKey] = useState("All");
   const [imgList, setImgList] = useState([
-    inteiar1,
-    arc1,
-    inteiar2,
-    consoltan1,
-    arc3,
-    inteiar4,
-    consoltan2,
-    consoltan3,
-    arc4,
+    {
+      img: inteiar1,
+      class: "filter-interior",
+    },
+    {
+      img: arc1,
+      class: "filter-arc",
+    },
+    {
+      img: inteiar2,
+      class: "filter-interior",
+    },
+    {
+      img: consoltan1,
+      class: "filter-cons",
+    },
+    {
+      img: arc3,
+      class: "filter-arc",
+    },
+    {
+      img: inteiar4,
+      class: "filter-interior",
+    },
+    {
+      img: consoltan2,
+      class: "filter-cons",
+    },
+    {
+      img: consoltan3,
+      class: "filter-cons",
+    },
+    {
+      img: arc4,
+      class: "filter-arc",
+    },
   ]);
 
   useEffect(() => {
-    const script = document.createElement('script');
-  
+    const script = document.createElement("script");
+
     script.src = "assets/js/homePageInit.js";
     script.async = true;
-  
+
     document.body.appendChild(script);
-  
+
     return () => {
       document.body.removeChild(script);
-    }
+    };
   }, []);
 
   const handleSelect = (eventKey) => {
-    // alert(`selected ${eventKey}`);
     setActiveKey(eventKey);
-    switch (eventKey) {
-      case "All":
-        setImgList([
-          inteiar1,
-          arc1,
-          inteiar2,
-          consoltan1,
-          arc3,
-          inteiar4,
-          consoltan2,
-          consoltan3,
-          arc4,
-        ]);
-        break;
-      case "Interior":
-        setImgList([inteiar1, inteiar2, inteiar4]);
-        break;
-      case "Architecture":
-        setImgList([arc1, arc3, arc4]);
-        break;
-      case "Engineering":
-        setImgList([]);
-        break;
-      case "Consaltant":
-        setImgList([consoltan1, consoltan2, consoltan3]);
-        break;
-      default:
-        break;
-    }
-    window.AOS.init();
   };
   return (
     <div>
@@ -124,23 +120,23 @@ const Project = () => {
             onSelect={handleSelect}
           >
             <Nav.Item>
-              <Nav.Link eventKey="All" href="#/home">
+              <Nav.Link data-filter="*" className="portfolio-selector" eventKey="All" href="#/home">
                 All
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="Interior" href="#/home">
+              <Nav.Link data-filter=".filter-interior" className="portfolio-selector" eventKey="Interior" href="#/home">
                 Interior
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="Architecture">Architecture</Nav.Link>
+              <Nav.Link data-filter=".filter-arc" className="portfolio-selector" eventKey="Architecture">Architecture</Nav.Link>
             </Nav.Item>
             <NavDropdown title="Dropdown" id="nav-dropdown">
               <NavDropdown.Item eventKey="Engineering">
                 Engineering
               </NavDropdown.Item>
-              <NavDropdown.Item eventKey="Consaltant">
+              <NavDropdown.Item data-filter=".filter-cons" className="portfolio-selector" eventKey="Consaltant">
                 Consaltant
               </NavDropdown.Item>
             </NavDropdown>
@@ -153,14 +149,14 @@ const Project = () => {
           >
             {imgList.map((img, index) => {
               return (
-                <div key={index} class="col-lg-4 col-md-6 portfolio-item">
+                <div key={index} className={`col-lg-4 col-md-6 portfolio-item ${img.class}`}>
                   <div class="portfolio-wrap">
-                    <img src={img} class="img-fluid" alt="" />
+                    <img src={img.img} class="img-fluid" alt="" />
                     <div class="portfolio-links">
                       <a
-                        href={img}
+                        href={img.img}
                         data-gallery="portfolioGallery"
-                        class="portfolio-lightbox"
+                        className="portfolio-lightbox"
                         title="App 1"
                       >
                         <i class="bx bx-plus"></i>

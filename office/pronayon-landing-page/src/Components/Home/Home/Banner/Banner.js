@@ -130,10 +130,9 @@ const Banner = () => {
           <div className="col-md-8 p-4">
             <h1 className="banner-h1">PRONAYON</h1>
             <h5 className="banner-txt w-50">
-              PRONAYON, a concern of Capco Group, is one of the most dynamic
-              Architectural, Engineering, and Planning Consultants in Bangladesh
-              with market leading position in Chittagong.
-            </h5>
+      
+PRONAYON, a sister concern of Capco Group, is one of the most dynamic Architectural, Engineering, and Planning Consultants in Bangladesh with market leading position in Chittagong. As a stimulus platform of enthusiastic Architects and Engineers, it has anchored its proud journey in 1990. Though initially started with a few young Architects and engineers, PRONAYON, is now a committed and competent group of multi-disci- plined professionals.
+It is a team of committed and versatile professionals, dedicated to idealize new thinking and creating bewitching designs and architecture. </h5>
             <img className="p-3" src={maskgroup1} alt="" />
           </div>
           <div className="col-md-4 p-4 banner-left">

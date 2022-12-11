@@ -171,21 +171,36 @@ const Project = () => {
                 Interior
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 eventKey=".filter-arc"
               >
                 Architecture
               </Nav.Link>
-            </Nav.Item>
-            <NavDropdown title="Others" id="nav-dropdown">
+            </Nav.Item> */}
+            <NavDropdown title="Consultancy" id="nav-dropdown">
               <NavDropdown.Item eventKey=".filter-eng">
-                Engineering
+                Commercial 
               </NavDropdown.Item>
               <NavDropdown.Item
                 eventKey=".filter-cons"
               >
-                Consaltant
+                Residential 
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                eventKey=".filter-cons"
+              >
+                Industrial 
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                eventKey=".filter-cons"
+              >
+                Factory 
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                eventKey=".filter-cons"
+              >
+                Other
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

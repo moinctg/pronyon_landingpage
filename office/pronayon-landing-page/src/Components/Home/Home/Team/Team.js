@@ -1,4 +1,3 @@
-
 import "./Team.css";
 
 import Nav from "react-bootstrap/Nav";
@@ -11,110 +10,66 @@ import team3 from "../../../../Images/Team3.png";
 import team4 from "../../../../Images/Team4.png";
 
 const Team = () => {
-  const [activeKey, setActiveKey] = useState("*");
-  const imgList= [
+  const all = [
     {
       img: team1,
-      class: "filter-interior",
-      title: "Test title"
+      name: "Marcus Owens",
+      department: "Admin",
     },
     {
       img: team2,
-      class: "filter-arc",
-      title: "Test title"
+      name: "Marcus Owens",
+      department: "Interior",
     },
     {
       img: team3,
-      class: "filter-interior",
-      title: "Test title"
+      name: "Marcus Owens",
+      department: "Electrical",
     },
     {
       img: team4,
-      class: "filter-cons",
-      title: "Test title"
-    },
-    {
-      img: team2,
-      class: "filter-arc",
-      title: "Test title"
-    },
-    {
-      img: team4,
-      class: "filter-interior",
-      title: "Test title"
-    },
-    {
-      img: team2,
-      class: "filter-cons",
-      title: "Test title"
-    },
-    {
-      img: team4,
-      class: "filter-cons",
-      title: "Test title"
-    },
-    {
-      img: team4,
-      class: "filter-arc",
-      title: "Test title"
+      name: "Marcus Owens",
+      department: "Architects",
     },
   ];
-  const [portfolioIsotope, setPortfolioIsotope] = useState(null);
 
-  // let portfolioIsotope = null;
+  const arc = [
+    {
+      img: team3,
+      name: "Marcus Owens",
+      department: "Architects",
+    },
+    {
+      img: team4,
+      name: "Marcus Owens",
+      department: "Architects",
+    },
+    {
+      img: team1,
+      name: "Marcus Owens",
+      department: "Architects",
+    },
+    {
+      img: team2,
+      name: "Marcus Owens",
+      department: "Architects",
+    },
+  ];
+
+  const teamData = {
+    all: all,
+    arc: arc,
+  };
+
+  const [selected, setSelected] = useState("all");
 
   useEffect(() => {
-    window.addEventListener("load", () => {
-      console.log("homePageInit on load");
-
-      let portfolioContainer = select(".portfolio-container");
-      if (portfolioContainer) {
-        const portfolioIsotopeTemp = new window.Isotope(portfolioContainer, {
-          itemSelector: ".portfolio-item",
-        });
-        setPortfolioIsotope(portfolioIsotopeTemp)
-      }
-
-      window.GLightbox({
-        selector: '.portfolio-lightbox'
-      });
-    });
+    window.addEventListener("load", () => {});
   }, []);
 
-  /**
-   * Easy selector helper function
-   */
-  const select = (el, all = false) => {
-    el = el.trim();
-    if (all) {
-      return [...document.querySelectorAll(el)];
-    } else {
-      return document.querySelector(el);
-    }
-  };
-
-  /**
-   * Easy event listener function
-   */
-  const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all);
-    if (selectEl) {
-      if (all) {
-        selectEl.forEach((e) => e.addEventListener(type, listener));
-      } else {
-        selectEl.addEventListener(type, listener);
-      }
-    }
-  };
-
-  const handleSelect = (eventKey) => {
-    setActiveKey(eventKey);
-    portfolioIsotope.arrange({
-      filter: eventKey,
-    });
-    portfolioIsotope.on("arrangeComplete", function () {
-      window.AOS.refresh();
-    });
+  const handleChange = (team) => {
+    if (selected !== team) setSelected(team);
+    // alert(team);
   };
 
   return (
@@ -122,292 +77,64 @@ const Team = () => {
       <div className="container">
         <div className="row" data-aos="fade-up">
           <div className="col-lg-6 pt-4 portfolio-flters">
-           <h6  className="text-white  filter-active " data-filter="*" >ALL</h6>
-            <h6 data-filter="filter-app">ARCHITECTS</h6>
-            <h6 data-filter="filter-card">ADMINISTRATION</h6>
-            <h6 data-filter="filter-web">ENGINEERS</h6>
-            <h6 li data-filter="filter-app">ELECTRICAL ENGINEERS</h6>
-          
+            <h6
+              onClick={() => handleChange("all")}
+              className={`${selected === "all" ? "text-white" : null}`}
+            >
+              ALL
+            </h6>
+            <h6
+              onClick={() => handleChange("arc")}
+              className={`${selected === "arc" ? "text-white" : null}`}
+            >
+              ARCHITECTS
+            </h6>
+            <h6
+              onClick={() => handleChange("admin")}
+              className={`${selected === "admin" ? "text-white" : null}`}
+            >
+              ADMINISTRATION
+            </h6>
+            <h6
+              onClick={() => handleChange("eng")}
+              className={`${selected === "eng" ? "text-white" : null}`}
+            >
+              ENGINEERS
+            </h6>
+            <h6
+              onClick={() => handleChange("elec_eng")}
+              className={`${selected === "elec_eng" ? "text-white" : null}`}
+            >
+              ELECTRICAL ENGINEERS
+            </h6>
           </div>
           <div className="col-lg-6">
             <h3 className="p-3 text-white text-right">Our Team</h3>
           </div>
-   
-         
-   
-        
+
           <div className="row  p-3" data-aos="fade-up" data-aos-delay="100">
-            <div className="col-md-3  portfolio-item filter-app ">
-              <img className="img" src={team1} alt="" />
-              <div className="style mt-4">
-                <div className="team-title">
-                  <p className="p-3 ">
-                    {" "}
-                    <span className="fs-4 text-white ">Marcus Owens</span>
-                    <br /> Architects
-                  </p>
-                  <p className="p-3 text-white team-social ">
-                    {" "}
-                    Facebook <br /> Linkdin{" "}
-                  </p>
+            {teamData[selected].map((value, index) => (
+              <div key={index} className="col-md-3">
+                <img className="img" src={value.img} alt="" />
+                <div className="style mt-4">
+                  <div className="team-title">
+                    <p className="p-3 ">
+                      {" "}
+                      <span className="fs-4 text-white ">{value.name}</span>
+                      <br /> {value.department}
+                    </p>
+                    <p className="p-3 text-white team-social ">
+                      {" "}
+                      Facebook <br /> Linkdin{" "}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="col-md-3  portfolio-item filter-web">
-              <img className="img" src={team2} alt="" />
-              <div className="style mt-4">
-                <div className="team-title">
-                  <p className="p-3 ">
-                    {" "}
-                    <span className="fs-4 text-white ">Marcus Owens</span>
-                    <br /> Architects
-                  </p>
-                  <p className="p-3 text-white  team-social">
-                    {" "}
-                    Facebook <br /> Linkdin{" "}
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-3">
-              <img className="img" src={team3} alt="" />
-              <div className="style mt-4">
-                <div className="team-title">
-                  <p className="p-3  ">
-                    <span className="fs-4 text-white">Marcus Owens</span>
-                    <br /> Architects
-                  </p>
-                  <p className="p-3 text-white team-social ">
-                    {" "}
-                    Facebook <br /> Linkdin{" "}
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-3">
-              <img className="img" src={team4} alt="" />
-              <div className="style mt-4">
-                <div className="team-title">
-                  <p className="p-3 ">
-                    {" "}
-                    <span className="fs-4 text-white">
-                      Marcus Owens
-                    </span> <br /> Architects
-                  </p>
-                  <p className="p-3 text-white style team-social">
-                    {" "}
-                    Facebook <br /> Linkdin{" "}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row  p-3">
-            <div className="col-md-3  ">
-              <img className="img" src={team1} alt="" />
-              <div className="style mt-4">
-                <div className="team-title">
-                  <p className="p-3 ">
-                    {" "}
-                    <span className="fs-4 text-white ">Marcus Owens</span>
-                    <br /> Architects
-                  </p>
-                  <p className="p-3 text-white team-social ">
-                    {" "}
-                    Facebook <br /> Linkdin{" "}
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-3 ">
-              <img className="img" src={team2} alt="" />
-              <div className="style mt-4">
-                <div className="team-title">
-                  <p className="p-3 ">
-                    {" "}
-                    <span className="fs-4 text-white ">Marcus Owens</span>
-                    <br /> Architects
-                  </p>
-                  <p className="p-3 text-white  team-social">
-                    {" "}
-                    Facebook <br /> Linkdin{" "}
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-3">
-              <img className="img" src={team3} alt="" />
-              <div className="style mt-4">
-                <div className="team-title">
-                  <p className="p-3  ">
-                    <span className="fs-4 text-white">Marcus Owens</span>
-                    <br /> Architects
-                  </p>
-                  <p className="p-3 text-white team-social ">
-                    {" "}
-                    Facebook <br /> Linkdin{" "}
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-3">
-              <img className="img" src={team4} alt="" />
-              <div className="style mt-4">
-                <div className="team-title">
-                  <p className="p-3 ">
-                    {" "}
-                    <span className="fs-4 text-white">
-                      Marcus Owens
-                    </span> <br /> Architects
-                  </p>
-                  <p className="p-3 text-white style team-social">
-                    {" "}
-                    Facebook <br /> Linkdin{" "}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row  p-3">
-            <div className="col-md-3  ">
-              <img className="img" src={team1} alt="" />
-              <div className="style mt-4">
-                <div className="team-title">
-                  <p className="p-3 ">
-                    {" "}
-                    <span className="fs-4 text-white ">Marcus Owens</span>
-                    <br /> Architects
-                  </p>
-                  <p className="p-3 text-white team-social ">
-                    {" "}
-                    Facebook <br /> Linkdin{" "}
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-3 ">
-              <img className="img" src={team2} alt="" />
-              <div className="style mt-4">
-                <div className="team-title">
-                  <p className="p-3 ">
-                    {" "}
-                    <span className="fs-4 text-white ">Marcus Owens</span>
-                    <br /> Architects
-                  </p>
-                  <p className="p-3 text-white  team-social">
-                    {" "}
-                    Facebook <br /> Linkdin{" "}
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-3">
-              <img className="img" src={team3} alt="" />
-              <div className="style mt-4">
-                <div className="team-title">
-                  <p className="p-3  ">
-                    <span className="fs-4 text-white">Marcus Owens</span>
-                    <br /> Architects
-                  </p>
-                  <p className="p-3 text-white team-social ">
-                    {" "}
-                    Facebook <br /> Linkdin{" "}
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-3">
-              <img className="img" src={team4} alt="" />
-              <div className="style mt-4">
-                <div className="team-title">
-                  <p className="p-3 ">
-                    {" "}
-                    <span className="fs-4 text-white">
-                      Marcus Owens
-                    </span> <br /> Architects
-                  </p>
-                  <p className="p-3 text-white style team-social">
-                    {" "}
-                    Facebook <br /> Linkdin{" "}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row  p-3">
-            <div className="col-md-3  ">
-              <img className="img" src={team1} alt="" />
-              <div className="style mt-4">
-                <div className="team-title">
-                  <p className="p-3 ">
-                    {" "}
-                    <span className="fs-4 text-white ">Marcus Owens</span>
-                    <br /> Architects
-                  </p>
-                  <p className="p-3 text-white team-social ">
-                    {" "}
-                    Facebook <br /> Linkdin{" "}
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-3 ">
-              <img className="img" src={team2} alt="" />
-              <div className="style mt-4">
-                <div className="team-title">
-                  <p className="p-3 ">
-                    {" "}
-                    <span className="fs-4 text-white ">Marcus Owens</span>
-                    <br /> Architects
-                  </p>
-                  <p className="p-3 text-white  team-social">
-                    {" "}
-                    Facebook <br /> Linkdin{" "}
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-3">
-              <img className="img" src={team3} alt="" />
-              <div className="style mt-4">
-                <div className="team-title">
-                  <p className="p-3  ">
-                    <span className="fs-4 text-white">Marcus Owens</span>
-                    <br /> Architects
-                  </p>
-                  <p className="p-3 text-white team-social ">
-                    {" "}
-                    Facebook <br /> Linkdin{" "}
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-3">
-              <img className="img" src={team4} alt="" />
-              <div className="style mt-4">
-                <div className="team-title">
-                  <p className="p-3 ">
-                    {" "}
-                    <span className="fs-4 text-white">
-                      Marcus Owens
-                    </span> <br /> Architects
-                  </p>
-                  <p className="p-3 text-white style team-social">
-                    {" "}
-                    Facebook <br /> Linkdin{" "}
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
-
-
-
-
     </div>
-
   );
 };
 

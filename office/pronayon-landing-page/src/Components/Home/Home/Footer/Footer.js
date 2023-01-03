@@ -45,7 +45,7 @@ const Footer = () => {
             </div>
             <div className="col-md-4">
                 <h4>Our Office</h4>
-                <h6 className="p-4">Commercial Court,95,Agrabad R/A,Chittaong</h6>
+                <h6 className="p-4">Commercial Court,95,Agrabad C/A,Chittaong</h6>
 
                 <h6 className="p-4">All Right Reserved PRONAYON</h6>
 

@@ -2,6 +2,7 @@ import React from 'react';
 import "./About.css";
 
  import img1 from '../../../../Images/about.jpg';
+ import img2 from '../../../../Images/vission.png';
 
 const About = () => {
     return (
@@ -24,6 +25,34 @@ It is a team of committed and versatile professionals, dedicated to idealize new
 From the very beginning, PRONAYON has been carving its luminous footmark with innovative creation. Throughout the journey, we are keenly fo- cused to sharpen the advancement of technological edge and related soft skills and human capital to meet inclreasingly complex challenges of the time as well as the criteria of diverse clientele. Through this relentless pursuit of aesthetic quality and functional perfection, PRONAYON has been thrust to a highly acclaimed stature. We shall treat our success story as a continuous process in an unrelenting pursuit of the ideals we value. Our unwinking sight is vigilant on your forthcoming update demands.
 Our strength is your satisfaction.
 In quest of innovative and sustainable design solutions for a wide range of developments through multi-disciplinary expertise in architecture, en- gineering and interior design, the maestro - Architect Sohail M Shakoor envisioned in 1990 to build a dedicated platform to realise the goal of promoting the design profession as an ethically socially and environmentally conscious creative movement leading to the formation of PRONAY- ON. His prime focus is always designing built environments that enrich and transform people's lives</p>
+                </div>
+                
+            </div>
+            <div className='row'>
+                <div className='col-md-6'>
+                    <h3> Vision </h3>
+                  <p>To be the country's most sought after facilitator in creating,nurturing and maximizing value to architecture and Engineering Solutions to the clients ,environments as wel as society.</p>
+                </div>
+                <div className='col-md-6'>
+                    <h3>Mission</h3>
+                    <p>To lead by example through a committed team of nurtured resources fostering conviction that motives towards excelllence in knowledge ,systems,structure,processes and producers,thereby empowering the organization at every level to deliver the highest quality of services,client care value keeping environmental safety a priority.</p>
+
+                </div>
+                </div>
+                <div className='row'>
+                    <div className='col-md-12'>
+                        <img src={img2} alt=""></img>
+                    </div>
+                </div>
+                <div className='row'>
+                <div className='col-md-6'>
+                    <h3> Values </h3>
+                  <p>To be the country's most sought after facilitator in creating,nurturing and maximizing value to architecture and Engineering Solutions to the clients ,environments as wel as society.</p>
+                </div>
+                <div className='col-md-6'>
+                    <h3>Strategy</h3>
+                    <p>To lead by example through a committed team of nurtured resources fostering conviction that motives towards excelllence in knowledge ,systems,structure,processes and producers,thereby empowering the organization at every level to deliver the highest quality of services,client care value keeping environmental safety a priority.</p>
+
                 </div>
             </div>
            

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Service.css';
+import interior from '../../../../Images/Service/interior.png';
 
 const Service = () => {
   return (
@@ -7,7 +8,7 @@ const Service = () => {
       <h1 className='  service-h1'>Service</h1>
       <div className='row'>
         <div className='col-lg-12 col-md-3'>
-          <p className='service-txt h-50 ps-5 '>PRONAYON offers comprehensive services in a number of functional areas.The wide range of experienced professional allow us to form multi-disciinary teams that work with crativity and flexibility to meet the unique needs of each project.
+          <p className='service-txt h-50 ps-5 ' data-aos="fade-up" data-aos-delay="50">PRONAYON offers comprehensive services in a number of functional areas.The wide range of experienced professional allow us to form multi-disciinary teams that work with crativity and flexibility to meet the unique needs of each project.
           Our Project process is dedicated to advancing the way we work.seeking improved quality in accelerated and inegrated project solutions as well as delivery procedures.we 
           using advaned technology and tools and improve communication, collaboration and workflow and to safeguared the very interest of the Clients.          
            </p>
@@ -18,6 +19,9 @@ const Service = () => {
       <div className='row pt-4'>
         <div className='col-md-4'>
           <div >
+          <div class="box">
+    
+
            <h4 className='text-center'>Architecture</h4>
           <ol className='style'><span className="m-3 ">01 </span> Architectural Design</ol>
           <ol className='style'><span className="m-3">02 </span>Architectural Drawing</ol>
@@ -30,8 +34,10 @@ const Service = () => {
           <ol className='style'><span className="m-3">03 </span> Sustainable Architecture </ol>
           <ol className='style'><span className="m-3">03 </span> Govt.Authority Approval Drawing </ol>
           </div>
+          </div>
         </div>
         <div className='col-md-4'>
+        <div class="box">
         <h4 className='text-center'>Engineering</h4>
           <div className='hr.style1'>
           <ol className='style'><span className="m-3 ">04 </span>Site Servey</ol>
@@ -44,13 +50,17 @@ const Service = () => {
           <ol className='style'><span className="m-3 ">06 </span>Electro-Mechanical And Plumbing Engineering </ol>
           <ol className='style'><span className="m-3 ">06 </span>Project Management</ol>
           </div>
+          </div>
         </div>
         <div className='col-md-4'>
+               <div class="box">
+                <img className='text-center h-50' src={interior} alt=""/>
         <h4 className='text-center'>Interior Design</h4>
           <div className='hr.style1'>
           <ol className='style'><span className="m-3 ">07 </span>Interior Design Of boutiques </ol>
           <ol className='style'><span className="m-3 ">08 </span>Interior Design Of Bars and Renders</ol>
           <ol className='style'><span className="m-3 ">09 </span>Architecture Design of house</ol>
+          </div>
           </div>
         </div>
         
@@ -58,19 +68,23 @@ const Service = () => {
       </div>
       <div className='row pt-4'>
         <div className='col-md-4'>
+        <div class="box">
           <div >
            <h4 className='text-center'>Post Construction Services</h4>
           <ol className='style'><span className="m-3 ">01 </span> Planing</ol>
           <ol className='style'><span className="m-3">02 </span>Architecture</ol>
           <ol className='style'><span className="m-3">03 </span> Engineering</ol>
           </div>
+          </div>
         </div>
         <div className='col-md-4'>
+        <div class="box">
         <h4 className='text-center'>Management Consultancy</h4>
           <div className='hr.style1'>
           <ol className='style'><span className="m-3 ">04 </span>Interior Design</ol>
           <ol className='style'><span className="m-3 ">05 </span>Program Manager</ol>
           <ol className='style'><span className="m-3 ">06 </span>Post Construction Service</ol>
+          </div>
           </div>
         </div>
         {/* <div className='col-md-4'>

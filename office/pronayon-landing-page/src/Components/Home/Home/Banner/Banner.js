@@ -1,13 +1,20 @@
 import React from "react";
 import maskgroup1 from "../../../../Images/MaskGroup1.png";
 import Group1 from "../../../../Images/Group1.png";
-// import arc3 from '../../../../Images/arc3.jpg'
-import arc4 from "../../../../Images/arc4.jpeg";
-import arc6 from "../../../../Images/arc6.jpg";
-import img5 from "../../../../Images/project/5.jpg";
-import img6 from "../../../../Images/project/12.jpg";
-import img7 from "../../../../Images/project/14.jpg";
-import img8 from "../../../../Images/project/15.jpg";
+import img1 from "../../../../Images/Slide/1.jpg";
+import img2 from "../../../../Images/Slide/2.jpg";
+import img3 from "../../../../Images/Slide/3.jpg";
+import img4 from "../../../../Images/Slide/4.jpg";
+import img5 from "../../../../Images/Slide/5.jpg";
+import img6 from "../../../../Images/Slide/6.jpg";
+import img7 from "../../../../Images/Slide/7.jpg";
+import img8 from "../../../../Images/Slide/8.jpg";
+import img9 from "../../../../Images/Slide/9.jpg";
+
+// import arc3 from '../../../../Images/arc3.jpg';
+
+
+
 // import React, { useState } from 'react';
 //   import { Swiper, SwiperSlide } from 'swiper/react';
 //   import { Thumbs } from 'swiper';
@@ -33,7 +40,7 @@ const Banner = () => {
       <SwiperSlide>Slide 4</SwiperSlide>
       ...
     </Swiper> */}
-
+     
       <div
         id="carouselExampleDark"
         class="carousel carousel-dark slide"
@@ -63,45 +70,135 @@ const Banner = () => {
           <button
             type="button"
             data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="2"
+            data-bs-slide-to="3"
             aria-label="Slide 4"
           ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="5"
+            aria-label="Slide 6"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="6"
+            aria-label="Slide 7"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="7"
+            aria-label="Slide 8"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="8"
+            aria-label="Slide 9"
+          ></button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src={img5} class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
+        <div class="carousel-inner ">
+          <div class="carousel-item active" data-bs-interval="10000" >
+            <img src={img1} class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block" data-aos="fade-up" data-aos-delay="50">
+            {/* <h3 className="text-ornage"> PRONAYON, a sister concern of Capco Group, is one of the most dynamic Architectural, Engineering, and Planning Consultants in Bangladesh with market leading position in Chittagong. As a stimulus platform of enthusiastic Architects and Engineers, it has anchored its proud journey in 1990</h3> */}
+              <h1 className="text-white text-center">3 Storied Residential Building </h1>
+              <p className="text-white  text-center">
+                Client: Mr Shawkat Ali  </p>  
+                <p className="text-white  text-center">
+                Site Location:Kulshi,Chittagong
+                
               </p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src={img6} class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
+            <img src={img2} class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block" data-aos="fade-up" data-aos-delay="50">
+            <h1 className="text-white  text-center">3 Storied Residential Building </h1>
+              <p className="text-white  text-center">
+                Client: Mr Shawkat Ali  </p>  
+                <p className="text-white  text-center">
+                Site Location:Kulshi,Chittagong
               </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src={img3} class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block "data-aos="fade-up" data-aos-delay="50">
+              <h1 className="text-white  text-center">Bellevue Hospital </h1>
+              <p  className="text-white  text-center">
+                Client: Bellevue 
+              </p>
+              <p  className="text-white  text-center">
+                Site Location: Panchlaish,Chittagong 
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src={img4} class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block"data-aos="fade-up" data-aos-delay="50">
+              <h1 className="text-center text-red">Project Name: Airport Road Bridge</h1>
+              <p className="text-white text-center">
+                Client: Chattogram City Corporation
+              </p>
+              <p className="text-white text-center">Site Location: Airport Road,Chittagong</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src={img5} class="d-block w-100" alt="..." data-aos="fade-up" data-aos-delay="50"/>
+            <div class="carousel-caption d-none d-md-block">
+            <h1 className="text-center text-white">Project Name: Birbikram Zaynul Abedin High School</h1>
+              <p className="text-white text-center">
+                Client: Birbikram Late Zaynul Abedin
+              </p>
+              <p className="text-white text-center">Site Location: Pantrisha Chunati,Lohagara,Chittagong</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src={img6} class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block" data-aos="fade-up" data-aos-delay="50">
+            <h1 className="text-center text-white">Project Name: 3 Storied Mosque</h1>
+              <p className="text-white text-center">
+                Client: Mr.Abdullah 
+              </p>
+              <p className="text-white text-center">Site Location: Chunati,Lohagara,Chittagong</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src={img7} class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
+            <div class="carousel-caption d-none d-md-block" data-aos="fade-up" data-aos-delay="50">
+            <h1 className="text-center text-white">Project Name: Interior Design of Apartemnt </h1>
+              <p className="text-white text-center">
+                Client: Mr.Sabbir 
               </p>
+              <p className="text-white text-center">Site Location: Nasirabad Properties Ltd,Chittagong</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src={img8} class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
+            <div class="carousel-caption d-none d-md-block"data-aos="fade-up" data-aos-delay="50">
+            <h1 className="text-center text-white">Project Name: Interior Design of Apartemnt </h1>
+              <p className="text-white text-center">
+                Client: Mr.Ashraf & Doloy
               </p>
+              <p className="text-white text-center">Site Location:Gulshan 2,Dhaka</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src={img9} class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block" data-aos="fade-up" data-aos-delay="50">
+            <h1 className="text-center text-white">Project Name: Interior Design of Apartemnt </h1>
+              <p className="text-white text-center">
+                Client: Mr.Ashraf & Doloy
+              </p>
+              <p className="text-white text-center">Site Location:Gulshan 2,Dhaka</p>
             </div>
           </div>
         </div>
@@ -136,7 +233,7 @@ It is a team of committed and versatile professionals, dedicated to idealize new
             <img className="p-3" src={maskgroup1} alt="" />
           </div>
           <div className="col-md-4 p-4 banner-left">
-            <h1 className="banner-left-head">31 </h1>
+            <h1 className="banner-left-head">33 </h1>
             <h6 className="banner-h6">Years experience</h6>
             <h1 className="banner-left-head">2000 </h1>
             <h6 className="banner-h6">References of projects</h6>

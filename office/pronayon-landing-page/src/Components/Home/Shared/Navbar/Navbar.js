@@ -44,6 +44,13 @@ const Navbar = () => {
             </Link>
             
           </li>
+          <li class="nav-item">
+            <Link class="nav-link" to="/message">
+              Message
+            </Link>
+            
+          </li>
+          
 
 
           <li class="nav-item">
@@ -66,54 +73,21 @@ const Navbar = () => {
               Contact
             </Link>
           </li>
-          {/* <li class="nav-item dropdown">
-                <Link 
-                  class="nav-link dropdown-toggle"
-                  to="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown link
-                </Link>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
-              </li> */}
- <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      
+     
+
               
 
         </ul>
       </div>
+
+
+ 
+
     </nav>
+
+    
+
+
   );
 };
 

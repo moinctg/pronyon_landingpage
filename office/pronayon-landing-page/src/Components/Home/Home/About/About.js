@@ -6,7 +6,7 @@ import "./About.css";
 
 const About = () => {
     return (
-        <div className="container pt-4">
+        <div className="container pt-4" data-aos="fade-up" data-aos-delay="50">
             <div className="row">
                 <div className="col-lg-12">
                     <img src={img1}  alt=""/>
@@ -44,14 +44,27 @@ In quest of innovative and sustainable design solutions for a wide range of deve
                         <img src={img2} alt=""></img>
                     </div>
                 </div>
-                <div className='row'>
-                <div className='col-md-6'>
+                <div className='row pt-5'>
+                <div className='col-md-6 '>
                     <h3> Values </h3>
-                  <p>To be the country's most sought after facilitator in creating,nurturing and maximizing value to architecture and Engineering Solutions to the clients ,environments as wel as society.</p>
+                  <p>We value talents and creativity </p>
+                  <p>We concern about satisfaction of employees and clients</p>
+               <p>We provide excellent level of quality service</p>   
+<p>We assure reliability in every steps of develop-ment of our actions</p>
+<p>We ensure chronological improvement in our quality works</p>
+<p>We promise to provide synergy support to cli-ents group</p>
+<p>We believe to fulfill clients or users need & re-quirements</p>
+<p>We deliver quality works of creation and creativ-ity</p>
+<p>We deliver quality works of creation and creativity</p>
+<p>We plan for the sustainable development of the city promenade</p>
+
                 </div>
-                <div className='col-md-6'>
+                <div className='col-md-6' data-aos="fade-up" data-aos-delay="50">
                     <h3>Strategy</h3>
-                    <p>To lead by example through a committed team of nurtured resources fostering conviction that motives towards excelllence in knowledge ,systems,structure,processes and producers,thereby empowering the organization at every level to deliver the highest quality of services,client care value keeping environmental safety a priority.</p>
+                   <p>To plan the organization to grow up at a rate of 15%</p>
+                   <p>To nurture creative exercise and generate new ideas which will expand our service in the advance global market</p>
+                   <p>To uphold the uniqueness in local market in order to take part in future development</p>
+                  
 
                 </div>
             </div>

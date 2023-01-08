@@ -10,6 +10,7 @@ import Contact from "./Components/Home/Home/Contact/Contact";
 import Project from "./Components/Home/Home/Project/Project";
 import Service from "./Components/Home/Home/Service/Service";
 import Clients from "./Components/Home/Home/Clients/Clients";
+import Message from "./Components/Home/Message/Message";
 function App() {
   return (
     <AuthProvider>
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home></Home>}/>
         <Route path="/home" element={<Home></Home>}/>
         <Route path="/about" element={<About></About>}/>
+        <Route path="/message" element={<Message></Message>}/>
         <Route path="/contact" element={<Contact></Contact>}/>
         <Route path="/project" element={<Project></Project>}/>
         <Route path="/service" element={<Service></Service>}/>

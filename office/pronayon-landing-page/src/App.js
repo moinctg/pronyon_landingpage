@@ -11,6 +11,7 @@ import Project from "./Components/Home/Home/Project/Project";
 import Service from "./Components/Home/Home/Service/Service";
 import Clients from "./Components/Home/Home/Clients/Clients";
 import Message from "./Components/Home/Message/Message";
+import Footer from "./Components/Home/Shared/Footer/Footer";
 function App() {
   return (
     <AuthProvider>
@@ -28,6 +29,7 @@ function App() {
         
        
         </Routes>
+        <Footer></Footer>
       </Router>
     </AuthProvider>
   );

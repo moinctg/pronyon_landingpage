@@ -11,21 +11,21 @@ import './Clients.css';
 import { Grid, Pagination } from "swiper";
 
 
-import img1 from '../../../../Images/bsrm.png';
-import img2 from '../../../../Images/kepz.jpg';
-import img3 from '../../../../Images/ctgclub.png';
-import img4 from '../../../../Images/youngone.png';
-import img5 from '../../../../Images/Heiderbag.png';
-import img6 from '../../../../Images/bgc.png';
-import img7 from '../../../../Images/ebl.png';
-import img8 from '../../../../Images/mtb.png';
-import img9 from '../../../../Images/bbl.png';
-import img10 from '../../../../Images/aibl.png';
-import img11 from '../../../../Images/kepz.jpg';
-import img12 from '../../../../Images/puc.png';
-import img13 from '../../../../Images/rackitt.png';
-import img14 from '../../../../Images/sheema.png';
-import img15 from '../../../../Images/unilever.png';
+import img1 from '../../../../Images/Client/bsrm.png';
+import img2 from '../../../../Images/Client/kepz.jpg';
+import img3 from '../../../../Images/Client/ctgclub.png';
+import img4 from '../../../../Images/Client/youngone.png';
+import img5 from '../../../../Images/Client/Heiderbag.png';
+import img6 from '../../../../Images/Client/bgc.png';
+import img7 from '../../../../Images/Client/ebl.png';
+import img8 from '../../../../Images/Client/mtb.png';
+import img9 from '../../../../Images/Client/bbl.png';
+import img10 from '../../../../Images/Client/aibl.png';
+import img11 from '../../../../Images/Client/kepz.jpg';
+import img12 from '../../../../Images/Client/puc.png';
+import img13 from '../../../../Images/Client/rackitt.png';
+import img14 from '../../../../Images/Client/sheema.png';
+import img15 from '../../../../Images/Client/unilever.png';
 // import img16 from '../../../../Images/unilever.png';
 
 const Clients = () => {
@@ -40,23 +40,23 @@ const Clients = () => {
                 <div className='col-lg-6 p-5'>
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
-                            <div class="card h-75">
-                                <img src={img1} class="card-img-top" alt="..." />
+                            <div class="card h-100">
+                                <img src={img1} class="card-img-top client-img text-center" alt="..." />
 
 
                             </div>
                         </div>
                         <br/>
                         <div class="col">
-                            <div class="card h-75  g-4">
-                                <img src={img2} class="card-img-top" alt="..." />
+                            <div class="card h-100  g-4">
+                                <img src={img2} class="card-img-top client-img text-center" alt="..." />
 
 
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-75 g-4">
-                                <img src={img3} class="card-img-top" alt="..." />
+                            <div class="card h-100 g-4">
+                                <img src={img3} class="card-img-top client-img text-center" alt="..." />
 
 
                             </div>
@@ -67,22 +67,22 @@ const Clients = () => {
 
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
-                            <div class="card h-75">
-                                <img src={img4} class="card-img-top" alt="..." />
+                            <div class="card h-100">
+                                <img src={img4} class="card-img-top client-img text-center" alt="..." />
 
 
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-75 ">
-                                <img src={img5} class="card-img-top" alt="..." />
+                            <div class="card h-100  ">
+                                <img src={img5} class="card-img-top client-img text-center" alt="..." />
 
 
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-75">
-                                <img src={img6} class="card-img-top" alt="..." />
+                            <div class="card h-100">
+                                <img src={img6} class="card-img-top client-img text-center" alt="..." />
 
 
                             </div>
@@ -92,22 +92,22 @@ const Clients = () => {
             
                     <div class="row row-cols-1 row-cols-md-3 g-6">
                         <div class="col">
-                            <div class="card h-75">
-                                <img src={img7} class="card-img-top" alt="..." />
+                            <div class="card h-100">
+                                <img src={img7} class="card-img-top client-img text-center" alt="..." />
 
 
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-75">
-                                <img src={img8} class="card-img-top" alt="..." />
+                            <div class="card h-100">
+                                <img src={img8} class="card-img-top client-img text-center" alt="..." />
 
 
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-75">
-                                <img src={img9} class="card-img-top" alt="..." />
+                            <div class="card h-100">
+                                <img src={img9} class="card-img-top client-img text-center" alt="..." />
 
 
                             </div>
@@ -115,22 +115,22 @@ const Clients = () => {
                         </div>
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col ">
-                            <div class="card h-75 ">
-                                <img src={img10} class="card-img-top" alt="..." />
-
-
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-75">
-                                <img src={img11} class="card-img-top" alt="..." />
+                            <div class="card h-100 ">
+                                <img src={img10} class="card-img-top client-img text-center" alt="..." />
 
 
                             </div>
                         </div>
                         <div class="col">
                             <div class="card h-100">
-                                <img src={img12} class="card-img-top" alt="..." />
+                                <img src={img11} class="card-img-top client-img text-center" alt="..." />
+
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src={img12} class="card-img-top client-img text-center" alt="..." />
 
 
                             </div>
@@ -139,22 +139,22 @@ const Clients = () => {
                     
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
-                            <div class="card h-75">
-                                <img src={img13} class="card-img-top" alt="..." />
+                            <div class="card h-100">
+                                <img src={img13} class="card-img-top client-img text-center" alt="..." />
 
 
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-75">
-                                <img src={img14} class="card-img-top" alt="..." />
+                            <div class="card h-100">
+                                <img src={img14} class="card-img-top client-img text-center" alt="..." />
 
 
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-75">
-                                <img src={img15} class="card-img-top" alt="..." />
+                            <div class="card h-100">
+                                <img src={img15} class="card-img-top client-img text-center" alt="..." />
 
 
                             </div>

@@ -10,21 +10,21 @@ const Footer = () => {
             <div className="row pt-5">
             {/* <img src={img} alt=""/> */}
             <div className="col-md-4">
-                <h2>Let us know your project</h2>
-                <img className="p-3" src={logo} alt=""/>
+                <h1 className=''>Let us know your project</h1>
+                <img className="p-5" src={logo} alt=""/>
 
             </div>
             <div className="col-md-4">
-                <h4>Contact Us</h4>
-                <h6>031-22221222</h6>
-                <h6>info@pronayonbd.com</h6>
-                <div className='row'>
-                                <div className='col-3 mx-auto'>
+                <h5 className='p-2'>Contact Us</h5>
+                 <p className='p-2'>031-22221222</p> 
+                <p>info@pronayonbd.com</p>
+                <div className='row p-4'>
+                                <div className='col-3 '>
                                     <a href="#">
                                     <i class="fab fa-facebook fontawesome-style"></i>
                                     </a>
                                 </div>
-                                <div className='col-3 mx-auto'>
+                                <div className='col-3 '>
                                     <a href="#">
                                     <i class="fab fa-instagram fontawesome-style"></i>
                                     </a>
@@ -44,10 +44,10 @@ const Footer = () => {
 
             </div>
             <div className="col-md-4">
-                <h4>Our Office</h4>
-                <h6 className="p-4">Commercial Court,95,Agrabad C/A,Chittaong</h6>
+                <h4 className='p-2'>Our Office</h4>
+                <h6 className="p-2">Commercial Court,95,Agrabad C/A,Chittaong</h6>
 
-                <h6 className="p-4">All Right Reserved PRONAYON</h6>
+                <h6 className="p-2">All Right Reserved PRONAYON</h6>
 
             </div>
 

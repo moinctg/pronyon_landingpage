@@ -1,6 +1,6 @@
 import React from 'react';
 import ceo from '../../../Images/Ceo.jpg';
-import signiture from '../../../Images/signiture.png';
+import signiture from '../../../Images/About/signiture.png';
 
 const Message = () => {
     return (

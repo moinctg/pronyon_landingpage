@@ -43,13 +43,21 @@ const Project = () => {
     {
       img: inteiar1,
       class: "filter-interior",
-      title: "Interior"
+      title: "Thermex Group ",
+      Description:"Thermex Group Project",
+      client:"Thermex Group",
+      location:"Golshan,Dhaka",
+      Consultant:"Pronayon"
     },
     
     {
       img: inteiar2,
       class: "filter-interior",
-      title: "Interior"
+      title: "Interior",
+      Description:"Thermex Group Project",
+      client:"Thermex Group",
+      location:"Golshan,Dhaka",
+      Consultant:"Pronayon"
     },
     {
       img: insti1,
@@ -186,9 +194,11 @@ const Project = () => {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
+              
               <Nav.Link
                 eventKey=".filter-interior"
                 href="#/home"
+         
               >
                 Interior
               </Nav.Link>
@@ -244,12 +254,14 @@ const Project = () => {
                 >
                   <div class="portfolio-wrap">
                     <img src={img.img} class="img-fluid" alt="" />
+                  <h6 className="p-2 "> Project Name: {img.title}</h6>
                     <div class="portfolio-links">
                       <a
                         href={img.img}
                         data-gallery="portfolioGallery"
                         className="portfolio-lightbox"
                         title={img.title}
+                        // Description={img.Description}
                       >
                         <i class="bx bx-plus"></i>
                       </a>

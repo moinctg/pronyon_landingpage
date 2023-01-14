@@ -1,10 +1,10 @@
-.team-back {
+.team_back {
   background-color: #595959;
 }
-.team-back .style {
+.team_back .style {
   border-top: 1px solid #8c8b8b;
 }
-.team-back .img {
+.team_back .img {
   /* filter: grayscale(100%);
     -webkit-filter: grayscale(100%); */
   filter: grayscale(100%);
@@ -17,13 +17,13 @@
   -webkit-filter: grayscale(1);
 }
 
-.team-back .team-title {
+.team_back .team-title {
   display: flex;
   flex-direction: row;
 }
-.team-back .team-social {
+.team_back .team-social {
   text-decoration: underline;
 }
-.team-back h3{
+.team_back h3{
     text-align: right;
 }

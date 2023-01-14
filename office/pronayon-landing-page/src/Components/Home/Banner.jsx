@@ -1,18 +1,17 @@
 import React from "react";
-import maskgroup1 from "../../../../Images/MaskGroup1.png";
-import Group1 from "../../../../Images/Group1.png";
-import img1 from "../../../../Images/Slide/1.jpg";
-import img2 from "../../../../Images/Slide/2.jpg";
-import img3 from "../../../../Images/Slide/3.jpg";
-import img4 from "../../../../Images/Slide/4.jpg";
-import img5 from "../../../../Images/Slide/5.jpg";
-import img6 from "../../../../Images/Slide/6.jpg";
-import img7 from "../../../../Images/Slide/7.jpg";
-import img8 from "../../../../Images/Slide/8.jpg";
-import img9 from "../../../../Images/Slide/9.jpg";
-import SectionHeaderOne from "../../Shared/SectionHeaderOne";
+import Group1 from "../../Images/Group1.png";
+import img1 from "../../Images/Slide/1.jpg";
+import img2 from "../../Images/Slide/2.jpg";
+import img3 from "../../Images/Slide/3.jpg";
+import img4 from "../../Images/Slide/4.jpg";
+import img5 from "../../Images/Slide/5.jpg";
+import img6 from "../../Images/Slide/6.jpg";
+import img7 from "../../Images/Slide/7.jpg";
+import img8 from "../../Images/Slide/8.jpg";
+import img9 from "../../Images/Slide/9.jpg";
+import SectionHeaderOne from "./Shared/SectionHeaderOne";
 
-// import arc3 from '../../../../Images/arc3.jpg';
+// import arc3 from '../../Images/arc3.jpg';
 
 // import React, { useState } from 'react';
 //   import { Swiper, SwiperSlide } from 'swiper/react';
@@ -20,7 +19,7 @@ import SectionHeaderOne from "../../Shared/SectionHeaderOne";
 
 // Import Swiper styles
 import "swiper/css";
-import "./Banner.css";
+import styles from "./Banner.module.css";
 
 const Banner = () => {
   // const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -276,42 +275,6 @@ const Banner = () => {
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
-
-      <div className="container">
-        <SectionHeaderOne title="PRONAYON"/>
-        <div className="row">
-          <div className="col-md-8 p-4">
-            <h5 className="banner-txt w-50">
-              PRONAYON, a sister concern of Capco Group, is one of the most
-              dynamic Architectural, Engineering, and Planning Consultants in
-              Bangladesh with market leading position in Chittagong. As a
-              stimulus platform of enthusiastic Architects and Engineers, it has
-              anchored its proud journey in 1990. Though initially started with
-              a few young Architects and engineers, PRONAYON, is now a committed
-              and competent group of multi-disci- plined professionals. It is a
-              team of committed and versatile professionals, dedicated to
-              idealize new thinking and creating bewitching designs and
-              architecture.{" "}
-            </h5>
-            <img className="p-3" src={maskgroup1} alt="" />
-          </div>
-          <div className="col-md-4 p-4 banner-left">
-            <h1 className="banner-left-head">33 </h1>
-            <h6 className="banner-h6">Years experience</h6>
-            <h1 className="banner-left-head">2000 </h1>
-            <h6 className="banner-h6">References of projects</h6>
-            <h5 className="banner-h5">
-              A committed and competent group of multi-deciplined professionals.
-            </h5>
-            <p className="banner-p">
-              It is a team of committed and versatile professionals, dedicated
-              to idealize new thinking and bewitching designs and architecture.
-              We, the PRONAYON family, is promised to evaluate your imaginary
-              concept and to incarnate your dream into the ultimate completion
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   );

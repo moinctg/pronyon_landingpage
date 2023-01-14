@@ -1,13 +1,10 @@
-/* body{
-    background-color:#E5E5E5;
-} */
-.banner-h1 {
+.banner_h1 {
     font-size: 200px;
     font-weight: 400;
     color: #E6E6E6;
 }
 
-.banner-txt {
+.banner_txt {
     font-family: 'Open Sans';
     margin-left: 40%;
     color: #595959;
@@ -19,25 +16,25 @@
 
 }
 
-.banner-h6 {
+.banner_h6 {
     color: #c8c8c8;
 }
 
-.banner-h5 {
+.banner_h5 {
     font-family: 'Open Sans';
     color: #595959;
     font-weight: bold;
   
 }
 
-.banner-p {
+.banner_p {
     color: #595959;
     font-family: 'Open Sans';
 }
 
-.banner-left {
+.banner_left {
     margin-top: 15%;
 }
-.banner-left-head{
+.banner_left_head{
     font-size: 100px;
 }

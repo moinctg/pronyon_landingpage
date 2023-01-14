@@ -1,0 +1,41 @@
+.about_txt {
+    font-family: 'Open Sans';
+    color: #595959;
+    text-align: justify;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    padding-left: 120px;
+    margin-bottom: 40px;
+}
+
+.about_h6 {
+    color: #c8c8c8;
+    margin-bottom: 50px;
+}
+
+.about_h5 {
+    font-family: 'Open Sans';
+    color: #595959;
+    font-weight: bold;
+  
+}
+
+.about_p {
+    color: #595959;
+    font-family: 'Open Sans';
+}
+.about_left{
+    padding-left: 80px;
+}
+
+.about_left_head{
+    font-size: 120px;
+    color: #595959;
+    margin-top: -40px;
+}
+
+.about_img{
+    width: 100%;
+    height: auto;
+}

@@ -1,32 +1,32 @@
-import "./Team.css";
+import styles from "./Team.module.css";
 
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 import React, { useState, useEffect } from "react";
-import ceo from "../../../../Images/Ceo.jpg";
-import abhijit from "../../../../Images/Abhijit.jpg";
-import samir from "../../../../Images/Samir.jpg";
-import panta from "../../../../Images/panta.jpg";
-import ridwan from "../../../../Images/Ridewan.jpg";
-import rakib from "../../../../Images/rakib.jpg";
-import tarek from "../../../../Images/Tarek.jpg";
-import istiak from "../../../../Images/istiak.jpg";
-import atik from "../../../../Images/atik.jpeg";
-import tanvir from "../../../../Images/tanvir.jpg";
-import jobair from "../../../../Images/jobaier.jpg";
-import anwar from "../../../../Images/anwar.jpg";
-import biplop from "../../../../Images/biplop.jpg";
-// import jayed from "../../../../Images/baset.jpg"
-import novel from "../../../../Images/novel.jpg"
-import rashed from "../../../../Images/rashed.jpg"
-import Morshel from "../../../../Images/morsel.jpg"
-import nipa from "../../../../Images/nipa.jpg"
-import rafsan from "../../../../Images/Rafsan.jpeg"
-import zakir from "../../../../Images/zakir.jpg"
-import animesh from "../../../../Images/animesh.jpg"
-import raihan from "../../../../Images/raihan.jpg"
-import zia from "../../../../Images/zia.jpg"
+import ceo from "../../Images/Ceo.jpg";
+import abhijit from "../../Images/Abhijit.jpg";
+import samir from "../../Images/Samir.jpg";
+import panta from "../../Images/panta.jpg";
+import ridwan from "../../Images/Ridewan.jpg";
+import rakib from "../../Images/rakib.jpg";
+import tarek from "../../Images/Tarek.jpg";
+import istiak from "../../Images/istiak.jpg";
+import atik from "../../Images/atik.jpeg";
+import tanvir from "../../Images/tanvir.jpg";
+import jobair from "../../Images/jobaier.jpg";
+import anwar from "../../Images/anwar.jpg";
+import biplop from "../../Images/biplop.jpg";
+// import jayed from "../../Images/baset.jpg"
+import novel from "../../Images/novel.jpg"
+import rashed from "../../Images/rashed.jpg"
+import Morshel from "../../Images/morsel.jpg"
+import nipa from "../../Images/nipa.jpg"
+import rafsan from "../../Images/Rafsan.jpeg"
+import zakir from "../../Images/zakir.jpg"
+import animesh from "../../Images/animesh.jpg"
+import raihan from "../../Images/raihan.jpg"
+import zia from "../../Images/zia.jpg"
 
 const Team = () => {
   const all = [
@@ -245,7 +245,7 @@ const Team = () => {
   };
 
   return (
-    <div className="team-back">
+    <div className={styles.team_back}>
       <div className="container">
         <div className="row" data-aos="fade-up">
           <div className="col-lg-6 pt-4 portfolio-flters">

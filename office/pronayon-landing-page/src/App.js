@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import * as React from "react";
 import AuthProvider from './Context/AuthProvider/AuthProvider';
 // import Navbar from './Components/Home/Shared/Navbar/Navbar.js';
-import Home from './Components/Home/Home';
+import Home from './Components/Home';
 import Navbar from './Components/Home/Shared/Navbar/Navbar'; 
 import About from "./Components/About";
 import Contact from "./Components/Home/Home/Contact/Contact";

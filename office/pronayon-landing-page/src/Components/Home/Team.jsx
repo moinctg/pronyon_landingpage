@@ -293,15 +293,15 @@ const Team = () => {
           <div className="row  p-3" data-aos="fade-up" data-aos-delay="100">
             {teamData[selected].map((value, index) => (
               <div key={index} className="col-md-3">
-                <img className="img" src={value.img} width="350px" height="350px" alt="" />
+                <img className={styles.img} src={value.img} width="350px" height="350px" alt="" />
                 <div className="style mt-4">
-                  <div className="team-title">
+                  <div className={styles.team_title}>
                     <p className="p-3 ">
                       {" "}
                       <span className="fs-4 text-white ">{value.name}</span>
                       <br /> {value.department}
                     </p>
-                    <p className="p-3 text-white team-social ">
+                    <p className={`p-3 text-white ${styles.team_social}`}>
                       {" "}
                       Facebook <br /> Linkdin{" "}
                     </p>

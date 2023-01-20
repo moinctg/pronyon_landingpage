@@ -2,7 +2,7 @@ import React from "react";
 import Banner from "./Banner";
 import About from "./About";
 import Team from "./Team";
-import Service from "./Home/Service/Service";
+import Service from "./Service";
 import Project from "./Home/Project/Project";
 import Clients from "./Home/Clients/Clients";
 import Footer from "./Shared/Footer/Footer";
@@ -12,7 +12,7 @@ export default () => {
     <>
       <Banner></Banner>
       <About/>
-      <Team></Team>
+      <Team/>
       <Service></Service>
       <Clients></Clients>
       <Project></Project>

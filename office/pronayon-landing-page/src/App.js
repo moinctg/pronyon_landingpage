@@ -8,7 +8,7 @@ import Navbar from './Components/Home/Shared/Navbar/Navbar';
 import About from "./Components/About";
 import Contact from "./Components/Home/Home/Contact/Contact";
 import Project from "./Components/Home/Home/Project/Project";
-import Service from "./Components/Home/Home/Service/Service";
+// import Service from "./Components/Home/Home/Service/Service";
 import Clients from "./Components/Home/Home/Clients/Clients";
 import Message from "./Components/Home/Message/Message";
 import Footer from "./Components/Home/Shared/Footer/Footer";
@@ -24,7 +24,7 @@ function App() {
         <Route path="/message" element={<Message></Message>}/>
         <Route path="/contact" element={<Contact></Contact>}/>
         <Route path="/project" element={<Project></Project>}/>
-        <Route path="/service" element={<Service></Service>}/>
+        {/* <Route path="/service" element={<Service></Service>}/> */}
         <Route path="/client" element={<Clients></Clients>}/>
         
        

@@ -12,3 +12,39 @@
   padding-left: 120px;
   margin-bottom: 40px;
 }
+
+.service_container .service_heading{
+  margin-bottom: 20px;
+}
+
+.service_container .service_grp{
+  display: flex;
+  overflow-x: hidden;
+}
+.service_container .service_grp div{
+  width: 40%;
+  flex-shrink: 0;
+  padding: 50px;
+}
+
+.service_container .service_grp div p{
+  border-top: 1px solid black;
+}
+
+.service_container .services_btn{
+  margin-top: 90px;
+  border-radius: 200px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.service_container .services_btn button{
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.service_container .services_btn button:active{
+  opacity: 0.5;
+}

@@ -1,3 +1,14 @@
 .service_container {
   /* font-family: "Hind Siliguri", sans-serif; */
 }
+
+.summary {
+  font-family: 'Open Sans';
+  color: #595959;
+  text-align: justify;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  padding-left: 120px;
+  margin-bottom: 40px;
+}

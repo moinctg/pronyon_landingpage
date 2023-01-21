@@ -1,5 +1,7 @@
 .team_back {
   background-color: #595959;
+  padding-top: 50px;
+  margin-top: 20px;
 }
 .team_back .style {
   border-top: 1px solid #8c8b8b;
@@ -28,6 +30,9 @@
 .team_back .team_social {
   text-decoration: underline;
 }
-.team_back h3{
+.team_back h2{
     text-align: right;
+}
+.team_back h6:hover{
+  cursor: pointer;
 }

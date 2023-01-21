@@ -248,7 +248,7 @@ const Team = () => {
     <div className={styles.team_back}>
       <div className="container">
         <div className="row" data-aos="fade-up">
-          <div className="col-lg-6 pt-4 portfolio-flters">
+          <div className="col-lg-6 portfolio-flters">
             <h6
               onClick={() => handleChange("all")}
               className={`${selected === "all" ? "text-white" : null}`}
@@ -287,13 +287,13 @@ const Team = () => {
             </h6>
           </div>
           <div className="col-lg-6">
-            <h3 className="p-3 text-white text-right">Our Team</h3>
+            <h2 className="text-white">Our Team</h2>
           </div>
-
-          <div className="row  p-3" data-aos="fade-up" data-aos-delay="100">
+        </div>
+        <div className="row" data-aos="fade-up" data-aos-delay="100">
             {teamData[selected].map((value, index) => (
               <div key={index} className="col-md-3">
-                <img className={styles.img} src={value.img} width="350px" height="350px" alt="" />
+                <img className={styles.img} src={value.img} alt="" />
                 <div className="style mt-4">
                   <div className={styles.team_title}>
                     <p className="p-3 ">
@@ -310,7 +310,6 @@ const Team = () => {
               </div>
             ))}
           </div>
-        </div>
       </div>
     </div>
   );

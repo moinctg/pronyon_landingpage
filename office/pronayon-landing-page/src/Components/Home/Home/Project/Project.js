@@ -1,9 +1,5 @@
 import "./Project.css";
-import img1 from "../../../../Images/project/1.jpg";
-import img2 from "../../../../Images/project/2.jpg";
-import img3 from "../../../../Images/project/3.jpg";
-import img4 from "../../../../Images/project/4.jpg";
-import img5 from "../../../../Images/project/5.jpg";
+
 
 import inteiar1 from "../../../../Images/project/Interiar/1.jpg";
 import inteiar2 from "../../../../Images/project/Interiar/2.jpg";
@@ -12,15 +8,22 @@ import inteiar4 from "../../../../Images/project/Interiar/4.jpg";
 import inteiar5 from "../../../../Images/project/Interiar/5.jpg";
 import inteiar6 from "../../../../Images/project/Interiar/6.jpg";
 
-import arc1 from "../../../../Images/project/Architecture/1.jpg";
-import arc2 from "../../../../Images/project/Architecture/2.jpg";
-import arc3 from "../../../../Images/project/Architecture/3.jpg";
-import arc4 from "../../../../Images/project/Architecture/4.jpg";
+import comr1 from "../../../../Images/project/Commercial/1.jpg";
+import comr2 from "../../../../Images/project/Commercial/2.jpg";
 
-import consoltan1 from "../../../../Images/project/Consalting/1.jpg";
-import consoltan2 from "../../../../Images/project/Consalting/6.jpg";
-import consoltan3 from "../../../../Images/project/Consalting/7.jpg";
-import consoltan4 from "../../../../Images/project/Consalting/8.jpg";
+import insti1 from "../../../../Images/project/Institutional/1.jpg";
+import insti2 from "../../../../Images/project/Institutional/2.jpg";
+
+import fac1 from "../../../../Images/project/Factory/1.PNG";
+import fac2 from "../../../../Images/project/Factory/2.png";
+
+import res1 from "../../../../Images/project/Resedendial/1.jpg";
+import res2 from "../../../../Images/project/Resedendial/2.jpg";
+
+
+import other1 from "../../../../Images/project/Other/1.jpg";
+import other2 from "../../../../Images/project/Other/2.jpg";
+
 
 // import eng1 from '../../../../Images/project/Engineering/1.jpg';
 // import eng2 from '../../../../Images/project/Engineering/2.jpg';
@@ -40,48 +43,75 @@ const Project = () => {
     {
       img: inteiar1,
       class: "filter-interior",
-      title: "Test title"
+      title: "Thermex Group ",
+      Description:"Thermex Group Project",
+      client:"Thermex Group",
+      location:"Golshan,Dhaka",
+      Consultant:"Pronayon"
     },
-    {
-      img: arc1,
-      class: "filter-arc",
-      title: "Test title"
-    },
+    
     {
       img: inteiar2,
       class: "filter-interior",
+      title: "Interior",
+      Description:"Thermex Group Project",
+      client:"Thermex Group",
+      location:"Golshan,Dhaka",
+      Consultant:"Pronayon"
+    },
+    {
+      img: insti1,
+      class: "filter-insti",
+      title: "institutional"
+    },
+    {
+      img: insti2,
+      class: "filter-insti",
+      title: "Institutional"
+    },
+    {
+      img: fac1,
+      class: "filter-fact",
+      title: "factory"
+    },
+    {
+      img: fac2,
+      class: "filter-fact",
+      title: "factory"
+    },
+    
+    
+    {
+      img: comr1,
+      class: "filter-comr",
       title: "Test title"
     },
     {
-      img: consoltan1,
-      class: "filter-cons",
+      img: comr2,
+      class: "filter-comr",
       title: "Test title"
     },
     {
-      img: arc3,
-      class: "filter-arc",
+      img: res1,
+      class: "filter-resi",
       title: "Test title"
     },
     {
-      img: inteiar4,
-      class: "filter-interior",
+      img: res2,
+      class: "filter-resi",
       title: "Test title"
     },
     {
-      img: consoltan2,
-      class: "filter-cons",
-      title: "Test title"
+      img: other1,
+      class: "filter-other",
+      title: "other"
     },
     {
-      img: consoltan3,
-      class: "filter-cons",
-      title: "Test title"
+      img: other2,
+      class: "filter-other",
+      title: "other"
     },
-    {
-      img: arc4,
-      class: "filter-arc",
-      title: "Test title"
-    },
+    
   ];
   const [portfolioIsotope, setPortfolioIsotope] = useState(null);
 
@@ -146,7 +176,7 @@ const Project = () => {
       <section id="portfolio" class="portfolio section-bg">
         <div class="container">
           <div class="section-title">
-            <h1>Project</h1>
+            <h1>Work Experience </h1>
           </div>
 
           <Nav
@@ -164,29 +194,50 @@ const Project = () => {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
+              
               <Nav.Link
                 eventKey=".filter-interior"
                 href="#/home"
+         
               >
                 Interior
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 eventKey=".filter-arc"
               >
                 Architecture
               </Nav.Link>
-            </Nav.Item>
-            <NavDropdown title="Others" id="nav-dropdown">
-              <NavDropdown.Item eventKey=".filter-eng">
-                Engineering
+            </Nav.Item> */}
+            <NavDropdown title="Consultancy" id="nav-dropdown">
+              <NavDropdown.Item eventKey=".filter-comr">
+                Commercial 
               </NavDropdown.Item>
               <NavDropdown.Item
-                eventKey=".filter-cons"
+                eventKey=".filter-resi"
               >
-                Consaltant
+                Residential 
               </NavDropdown.Item>
+              <NavDropdown.Item
+                eventKey=".filter-resi"
+              >
+                Institutional 
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                eventKey=".filter-insti"
+              >
+                Factory 
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                eventKey=".filter-fact"
+              >
+                Other
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                eventKey=".filter-other"
+            ></NavDropdown.Item>
+              
             </NavDropdown>
           </Nav>
 
@@ -203,12 +254,14 @@ const Project = () => {
                 >
                   <div class="portfolio-wrap">
                     <img src={img.img} class="img-fluid" alt="" />
+                  <h6 className="p-2 "> Project Name: {img.title}</h6>
                     <div class="portfolio-links">
                       <a
                         href={img.img}
                         data-gallery="portfolioGallery"
                         className="portfolio-lightbox"
                         title={img.title}
+                        // Description={img.Description}
                       >
                         <i class="bx bx-plus"></i>
                       </a>

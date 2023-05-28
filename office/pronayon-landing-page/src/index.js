@@ -2,11 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import "swiper/css/bundle";
 import reportWebVitals from './reportWebVitals';
+
+// import ReactDOM from "react-dom/client";
+
+
+
+
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    {/* <Routes>
+    <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
+      <Navigate from="/" to="/admin/dashboard" />
+    </Routes> */}
+    
   </React.StrictMode>,
   document.getElementById('root')
 );

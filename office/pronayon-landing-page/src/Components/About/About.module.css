@@ -1,0 +1,32 @@
+
+
+
+.about_txt {
+    font-family: 'Open Sans';
+    color: #595959;
+    text-align: justify;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    padding-left: 10px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.about_h5 {
+    font-family: 'Open Sans';
+    color: #595959;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+  
+}
+
+.about_p {
+    color: #595959;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
+}

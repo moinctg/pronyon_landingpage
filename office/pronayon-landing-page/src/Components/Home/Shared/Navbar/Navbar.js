@@ -1,5 +1,9 @@
 import React from "react";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro';
+
 // import {Nav,Link,Container} from 'react-bootstrap';
+import { Link  } from "react-router-dom";
 import logo from "../../../../Images/logo.png";
 import "./Navbar.css"
 
@@ -32,55 +36,79 @@ const Navbar = () => {
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active " aria-current="page" href="#">
+            <Link class="nav-link active " aria-current="page" to="/home">
               Home
-            </a>
+            </Link>
+          </li>
+         
+          <li class="nav-item">
+            <Link class="nav-link" to="/about">
+              About Us
+            </Link>
+            
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              Features
-            </a>
+            <Link class="nav-link" to="/message">
+              Message
+            </Link>
+            
+          </li>
+          
+
+
+          <li class="nav-item">
+            <Link class="nav-link" to="/project">
+              Project
+            </Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              Pricing
-            </a>
+            <Link class="nav-link" to="/service">
+              Services
+            </Link>
           </li>
-          {/* <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown link
-                </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
-              </li> */}
+          <li class="nav-item">
+            <Link class="nav-link" to="/client">
+              Clients
+            </Link>
+          </li>
+          <li class="nav-item">
+            <Link class="nav-link" to="/contact">
+              Contact
+            </Link>
+          </li>
+     
+          <li class="nav-item">
+            <Link class="nav-link" to="/register">
+            <i class="fas fa-user-plus"></i>
+         
+
+              Register
+            </Link>
+            </li>
+          <li class="nav-item">
+            <Link class="nav-link" to="/login">
+           
+            <i class="fas duotone fa-user"></i>
+            
+
+              Login
+            </Link>
+          </li>
+     
+
+              
+
         </ul>
       </div>
+
+
+ 
+
     </nav>
+
+    
+
+
   );
 };
 

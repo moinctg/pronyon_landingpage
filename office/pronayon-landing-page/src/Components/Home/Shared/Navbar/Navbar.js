@@ -1,4 +1,7 @@
 import React from "react";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro';
+
 // import {Nav,Link,Container} from 'react-bootstrap';
 import { Link  } from "react-router-dom";
 import logo from "../../../../Images/logo.png";
@@ -71,6 +74,24 @@ const Navbar = () => {
           <li class="nav-item">
             <Link class="nav-link" to="/contact">
               Contact
+            </Link>
+          </li>
+     
+          <li class="nav-item">
+            <Link class="nav-link" to="/register">
+            <i class="fas fa-user-plus"></i>
+         
+
+              Register
+            </Link>
+            </li>
+          <li class="nav-item">
+            <Link class="nav-link" to="/login">
+           
+            <i class="fas duotone fa-user"></i>
+            
+
+              Login
             </Link>
           </li>
      

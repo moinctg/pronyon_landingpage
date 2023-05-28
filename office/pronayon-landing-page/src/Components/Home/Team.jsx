@@ -232,12 +232,20 @@ const Team = () => {
     eng:eng,
     Interior:Interior
   };
+  const [team,setTeam] = useState([])
 
   const [selected, setSelected] = useState("all");
 
   useEffect(() => {
     window.addEventListener("load", () => {});
   }, []);
+
+   useEffect(()=>{
+    fetch('https://pronayon-server-side.onrender.com/api/team')
+    .then(res=>res.json())
+    .then(data=>console.log(data))
+
+   },[])
 
   const handleChange = (team) => {
     if (selected !== team) setSelected(team);

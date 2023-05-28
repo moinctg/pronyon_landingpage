@@ -12,6 +12,14 @@ import Service from "./Components/Home/Service"
 import Clients from "./Components/Home/Home/Clients/Clients";
 import Message from "./Components/Home/Message/Message";
 import Footer from "./Components/Home/Shared/Footer/Footer";
+import Register from "./Components/Register/Register";
+import Login from "./Components/Login/Login";
+import Dashboard from "./Components/Dashboard/Dashboard";
+import PrivateRoute from "./Components/PrivateRoute";
+
+
+
+
 function App() {
   return (
     <AuthProvider>
@@ -26,8 +34,16 @@ function App() {
         <Route path="/project" element={<Project></Project>}/>
         <Route path="/service" element={<Service></Service>}/>
         <Route path="/client" element={<Clients></Clients>}/>
+        <Route path="/register" element={<Register></Register>}/>
         
-       
+        <Route path="/login" element={<Login></Login>}/>
+        <Route path="/dashboard" element={<PrivateRoute> <Dashboard></Dashboard> </PrivateRoute>}>
+
+        <Route path={`/dashboard`} element={<Dashboard></Dashboard>} />
+          {/* <Route path={`/dashboard/profile`} element={} />
+          <Route path={`/dashboard/showData`} element={} />
+      */}
+       </Route>
         </Routes>
         <Footer></Footer>
       </Router>

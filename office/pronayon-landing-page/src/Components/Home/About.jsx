@@ -36,6 +36,33 @@ export default () => {
             the PRONAYON family, is promised to evaluate your imaginary concept
             and to incarnate your dream into the ultimate completion
           </p>
+          <h5 className={`${styles.about_h5}`}>
+            A committed and competent group of multi-deciplined professionals.
+          </h5>
+          <p className={styles.about_p}>
+            It is a team of committed and versatile professionals, dedicated to
+            idealize new thinking and bewitching designs and architecture. We,
+            the PRONAYON family, is promised to evaluate your imaginary concept
+            and to incarnate your dream into the ultimate completion
+          </p>
+          <h5 className={`${styles.about_h5}`}>
+            A committed and competent group of multi-deciplined professionals.
+          </h5>
+          <p className={styles.about_p}>
+            It is a team of committed and versatile professionals, dedicated to
+            idealize new thinking and bewitching designs and architecture. We,
+            the PRONAYON family, is promised to evaluate your imaginary concept
+            and to incarnate your dream into the ultimate completion
+          </p>
+          <h5 className={`${styles.about_h5}`}>
+            A committed and competent group of multi-deciplined professionals.
+          </h5>
+          <p className={styles.about_p}>
+            It is a team of committed and versatile professionals, dedicated to
+            idealize new thinking and bewitching designs and architecture. We,
+            the PRONAYON family, is promised to evaluate your imaginary concept
+            and to incarnate your dream into the ultimate completion
+          </p>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React from "react";
-import "./About.css";
+import styles from  "./About.module.css";
+import SectionHeaderOne from "../../Components/Home/Shared/SectionHeaderOne/index";
 
 
 import img1 from "../../Images/about.jpg";
@@ -7,7 +8,9 @@ import img2 from "../../Images/vission.png";
 
 export default () => {
   return (
+    
     <div className="container pt-4" data-aos="fade-up" data-aos-delay="50">
+       
       <div className="row">
         <div className="col-lg-12">
           <img src={img1} alt="" />
@@ -15,8 +18,9 @@ export default () => {
       </div>
       <div className="row">
         <div className="col-lg-12 p-4">
-          <h1 className="text-center head-h1">PRONAYON</h1>
-          <p>
+        <SectionHeaderOne title="PRONAYON" />
+        <h5 className={`${styles.about_txt}`}>
+          
             PRONAYON, a sister concern of Capco Group, is one of the most
             dynamic Architectural, Engineering, and Planning Consultants in
             Bangladesh with market leading position in Chittagong. As a stimulus
@@ -47,13 +51,15 @@ export default () => {
             environmentally conscious creative movement leading to the formation
             of PRONAY- ON. His prime focus is always designing built
             environments that enrich and transform people's lives
-          </p>
+          </h5>
         </div>
       </div>
       <div className="row">
         <div className="col-md-6">
-          <h3> Vision </h3>
-          <p>
+        <h5 className={`${styles.about_h5}`}>
+          Vision 
+          </h5>
+          <p className={styles.about_p}>
             To be the country's most sought after facilitator in
             creating,nurturing and maximizing value to architecture and
             Engineering Solutions to the clients ,environments as wel as
@@ -61,8 +67,10 @@ export default () => {
           </p>
         </div>
         <div className="col-md-6">
-          <h3>Mission</h3>
-          <p>
+        <h5 className={`${styles.about_h5}`}>
+          Mission 
+          </h5>
+          <p className={styles.about_p}>
             To lead by example through a committed team of nurtured resources
             fostering conviction that motives towards excelllence in knowledge
             ,systems,structure,processes and producers,thereby empowering the
@@ -78,28 +86,34 @@ export default () => {
       </div>
       <div className="row pt-5">
         <div className="col-md-6 ">
-          <h3> Values </h3>
-          <p>We value talents and creativity </p>
-          <p>We concern about satisfaction of employees and clients</p>
-          <p>We provide excellent level of quality service</p>
-          <p>
+        <h5 className={`${styles.about_h5}`}>
+
+          Values 
+          </h5>
+          <p className={styles.about_p}>
+           We value talents and creativity </p>
+           <p className={styles.about_p}>We concern about satisfaction of employees and clients</p>
+           <p className={styles.about_p}>We provide excellent level of quality service</p>
+           <p className={styles.about_p}>
             We assure reliability in every steps of develop-ment of our actions
           </p>
-          <p>We ensure chronological improvement in our quality works</p>
-          <p>We promise to provide synergy support to cli-ents group</p>
-          <p>We believe to fulfill clients or users need & re-quirements</p>
-          <p>We deliver quality works of creation and creativ-ity</p>
-          <p>We deliver quality works of creation and creativity</p>
-          <p>We plan for the sustainable development of the city promenade</p>
+          <p className={styles.about_p}>We ensure chronological improvement in our quality works</p>
+          <p className={styles.about_p}>We promise to provide synergy support to cli-ents group</p>
+          <p className={styles.about_p}>We believe to fulfill clients or users need & re-quirements</p>
+          <p className={styles.about_p}>We deliver quality works of creation and creativ-ity</p>
+          <p className={styles.about_p}>We deliver quality works of creation and creativity</p>
+          <p className={styles.about_p}>We plan for the sustainable development of the city promenade</p>
         </div>
         <div className="col-md-6" data-aos="fade-up" data-aos-delay="50">
-          <h3>Strategy</h3>
-          <p>To plan the organization to grow up at a rate of 15%</p>
-          <p>
+           <h5 className={`${styles.about_h5}`}>
+            Strategy 
+            </h5>
+            <p className={styles.about_p}>To plan the organization to grow up at a rate of 15%</p>
+            <p className={styles.about_p}>
             To nurture creative exercise and generate new ideas which will
             expand our service in the advance global market
           </p>
-          <p>
+          <p className={styles.about_p}>
             To uphold the uniqueness in local market in order to take part in
             future development
           </p>

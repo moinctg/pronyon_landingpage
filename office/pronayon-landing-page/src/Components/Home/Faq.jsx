@@ -4,7 +4,7 @@ const Faq = () => {
     return (
         <div className='container'>
             <p className='text-center '>our FAQ</p>
-            <h1 className='text-center'>Frequently Asked Question</h1>
+            <h1 >Frequently Asked Question</h1>
             <div className='row'>
                 <div className='col-md-6'>
                 <div class="accordion accordion-flush" id="accordionFlushExample">
